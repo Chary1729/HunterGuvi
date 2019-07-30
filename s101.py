@@ -7,6 +7,10 @@ for i in range(size):
   for j in range(k,size):
     if x[i]==x[j] and x[i] not in rep:
       rep.append(x[i])
+    else:
+      print('unique')
+      break
+  break
       
 rep.sort()
 print(*rep)
