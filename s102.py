@@ -1,9 +1,10 @@
 n=int(input())
-x=[int(x) for x in input().split()]
-x.sort(reverse=True)
+x=[x for x in input().split()]
+x=sorted(x,reverse=True)
 for i in x:
   if i==0:
     print(0)
     break
   else:
-    print(i,end="")
+    print(''.join(x))
+    break
